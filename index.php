@@ -8,11 +8,17 @@ Il secondo file riceverà la richiesta ed eseguirà queste operazioni:
 stampare a schermo il paragrafo e la sua lunghezza
 stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con tre asterischi (***) tutte le occorrenze della parola da censurare 
 
+
+
+
+ESEMPIO DI TESTO GENERATO DALL'IA, PAROLA DA CENSURARE "VITA":
+
+In un mondo in cui la vita è un mistero avvincente, ci troviamo immersi in un flusso costante di esperienze. La vita, con le sue sfide e le sue gioie, è il fulcro intorno al quale ruota tutto ciò che facciamo. Ogni giorno ci troviamo a navigare le acque tumultuose della vita, cercando significato e scopo nel labirinto delle nostre esistenze. In questo viaggio della vita, incontriamo persone che lasciano un'impronta indelebile nel nostro cammino, arricchendo la trama della nostra storia personale. Anche nei momenti più bui, la vita ci offre la possibilità di crescere e di trasformare le nostre difficoltà in opportunità. Così, con gratitudine e coraggio, continuiamo il nostro viaggio attraverso le terre inesplorate della vita, consapevoli che ogni passo ci avvicina sempre di più alla nostra verità più autentica.
+
+
 -->
 
 <?php 
-
-    var_dump($_GET);
 
     $text= $_GET["text"];
     $word= $_GET["word"];
@@ -36,6 +42,14 @@ stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con tre 
         <button type="submit">invia</button>
     </form>
 
+
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 200px
+        }
+    </style>
 
 </body>
 </html>

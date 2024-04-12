@@ -1,7 +1,9 @@
 <?php
-var_dump($_GET);
+
 $text= $_GET["text"];
-$textCensored= str_replace("casa", "***", $text);
+$word= $_GET["word"];
+
+$textCensored= str_replace($word, "***", $text);
  ?>
 
 
@@ -17,8 +19,7 @@ $textCensored= str_replace("casa", "***", $text);
     <p><?= $text ?></p>
     <h2>Il paragrafo è lungo <?= strlen($text)?> caratteri.</h2>
 
-
-    <p><?=$textCensored?></p>
+    <p><?= $textCensored ?></p>
     <h2>Il paragrafo è lungo <?= strlen($textCensored)?> caratteri.</h2>
 
 
